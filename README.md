@@ -16,7 +16,7 @@
     - [GET] http://{localhost / publichost}/detail/?title={JUDUL_FILM} = {JUDUL_FILM} untuk melihat detail film berdasarkan judul film. contoh : https://bibit-test.herokuapp.com/detail/?title=america
     - [GET] http://{localhost / publichost}/search/?title={JUDUL_FILM} = {JUDUL_FILM} untuk mensearching berdasarkan judul film dan menampilakn seluruh judul film yang berkaitan. contoh: https://bibit-test.herokuapp.com/search/?title=america
     - [GET] http://{localhost / publichost}/search/?title={JUDUL_FILM}&page={PAGE} = {JUDUL_FILM} untuk mensearching berdasarkan judul film dan menampilakn seluruh judul film yang berkaitan dan gunakan {PAGE} untuk melihat judul dihalaman selanjutnya. contoh : https://bibit-test.herokuapp.com/search/?title=america&page=2
-  - npm test :  untuk menjalankan unit test
+  - npm test :  untuk menjalankan unit test (JEST)
 
 
 3. _Refactor Code_

@@ -32,14 +32,13 @@ async function Search(req, res, next){
 }
 
 async function Detail(req, res, next){
-    console.log(req.query)
     client.query(`INSERT INTO public.log(date, endpoint, parameter) VALUES ('${d.getDate()  + "-" + (d.getMonth()+1) + "-" + d.getFullYear() + " " +
     d.getHours() + ":" + d.getMinutes()}', '/detail', '${req.query.title}');`, (err, res) => {
         if (err) {
             // console.error(err);
             return;
         }
-        console.log('Data insert successful');
+        console.log('Data insert successful', res);
         // client.end();
     });
     try {
