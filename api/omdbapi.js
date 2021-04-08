@@ -38,7 +38,7 @@ async function Detail(req, res, next){
             // console.error(err);
             return;
         }
-        console.log('Data insert successful', res);
+        console.log('Data insert successful');
         // client.end();
     });
     try {
